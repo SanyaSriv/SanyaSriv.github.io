@@ -21,7 +21,10 @@
     font-size: 19px;
   }
   .rolling-ball {
+    position: relative;
+    transition: 0.1s ease-in-out;
     display: block;
+    left: x;
     margin-top: 60px;
     width: 60px;
     height: 60px;
@@ -30,6 +33,7 @@
     background: -webkit-radial-gradient(25px 25px, circle, green, #000);
     background: -moz-radial-gradient(25px 25px, circle, green, #000);
     background: radial-gradient(25px 25px, circle, green, #000);
+    /* animation: 1s ease-in-out; */
   }
 
   </style>
@@ -50,6 +54,30 @@
  mathematical patterns.</p>
 
  <div class="rolling-ball"> </div>
+<script>
+  const ball = document.querySelector(".rolling-ball");
+
+  let mouseX = 0;
+  let ballX = 0;
+  let speed = 0.5;
+
+function animate(){
+
+  let distX = mouseX - ballX;
+
+  ballX = ballX + (distX * speed);
+
+  ball.style.left = ballX + "px";
+
+  requestAnimationFrame(animate);
+}
+animate();
+
+document.addEventListener("mousemove", function(event){
+  mouseX = event.pageX;
+})
+</script>
+
  <hr style =" margin-top: 0.0em; width:100%;">
 
  <p style = "font-size: 22px;

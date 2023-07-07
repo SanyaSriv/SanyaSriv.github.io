@@ -1,9 +1,28 @@
 body {
-  background-color: #09284a;
+  background-color: #fafafa;
+}
+figure {
+  overflow: hidden;
+  text-align: center;
+}
+
+img {
+  width: 20%;
+  height: auto;
+  float: left;
+}
+
+figcaption {
+  color: rgb(5, 3, 3);
+  font-style: italic;
+  text-align: center;
+  font-size: 10px;
+  display: block;
+  clear: both;
 }
 
 h1 {
-  color: white;
+  color: #5f6363;
   text-align: center;
   font-size: 40px;
 }
@@ -37,4 +56,35 @@ hr {
 .topnav a.active {
   background-color: #808080;
   color: white;
+}
+
+.navbar {
+  /* position: fixed; */
+  top: 35;
+  font-size: 20px;
+  width: 100%;
+  background-color: #939090;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a section for each link in the navigation bar */
+#AboutMe, #section2, #section3 {
+  padding-top: 50px;
+  margin-top: -50px;
 }

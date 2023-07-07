@@ -3,95 +3,47 @@
  <head>
  </head>
   <link rel="stylesheet" href="index.css">
-  <style>
-  img {
-    padding-top: 60px;
-    padding-right: 180px;
-    padding-left: 20px;
-  }
-  p {
-    text-align: left;
-    font-size: 22px;
-    padding-left: 100px;
-    padding-top: 150px;
-    font-family: "Times";
-  }
-  a {
-    color: green;
-    font-size: 19px;
-  }
-  .rolling-ball {
-    position: relative;
-    transition: 0.1s ease-in-out;
-    display: block;
-    left: x;
-    margin-top: 60px;
-    width: 60px;
-    height: 60px;
-    background: green;
-    border-radius: 50%;
-    background: -webkit-radial-gradient(25px 25px, circle, green, #000);
-    background: -moz-radial-gradient(25px 25px, circle, green, #000);
-    background: radial-gradient(25px 25px, circle, green, #000);
-    /* animation: 1s ease-in-out; */
-  }
-
-  </style>
  <body>
    <h1>Sanya Srivastava<h1>
-   <hr>
-   <div class="topnav">
-      <a class="active" href="#index.html">About Me</a>
-      <a href="research.html">Research and Projects</a>
-      <a href="Teaching.html"> Undergraduate Teaching</a>
-      <!-- <a href="ContactMe.html">Contact Me</a> -->
-      <a href="resume.html">Resume</a>
-   </div>
-   <img src="IMG_3806.JPG" alt="Sanya Srivastava" style="width:300px;height:350px;" align="right">
-   <p>Hello! <br>
-   I am Sanya Srivastava. I am a junior at the University of California Santa Cruz majoring in computer science. I am passionate about machine learning and mathematics.
-   I aim at merging medical science with artifical intelligence to improve technology in medicine. I also hold a deep interest in understanding and exploring
- mathematical patterns.</p>
+    <div class="navbar">
+      <a href="#AboutMe">About Me</a>
+      <a href="#section2">Education</a>
+      <a href="#section3">Personal</a>
+    </div>
+    <div id="AboutMe">
+      <img src="Tahoe.JPG" alt="Sanya Srivastava" style="float: left; margin-right: 60px; margin-left: 30px; margin-top: 40px; width: 19%; height: auto;">
+      <p style="text-align: justify; font-size: 40px; padding-left: 70px; padding-right: 60px; color:black;">About Me</p>
+      <p style="font-family: helvitica; text-align: justify; font-size: 18px; padding-left: 70px; padding-right: 60px;">
+        Hello! I am Sanya Srivastava. 
+        I am a senior at the University of California, Santa Cruz, majoring in Computer Science, 
+        advised by Professor Tyler Sorensen. My research is focused on high-performance graph 
+        processing on GPUs, which is also the topic of my bachelor's thesis. 
+        I am also interested in parallel processing, heterogeneous systems, 
+        compilers, and computer architecture. Additionally, I am also enthusiastic about 
+        systems programming!
+       <br>
+      </p>
+    </div>
+    <figcaption style=" font-family: cursive; font-size: 12px; text-align: left; padding-top: 10px; margin-left: 30px;">In Tahoe, with my little snow penguin.</figcaption>
+    
+    <div id="section2" style="margin-left: 370px;">
+    <p style="text-align: justify; font-size: 40px; color:black">Education</p>
+    <img src="UCSC.png" alt="Sanya Srivastava" style="float: left; margin-right: 30px; margin-left: 30px; width: 7%; height: auto;">
+    <p style="font-family: helvitica; text-align: justify; font-size: 25px; padding-top: 10px; padding-right: 60px;">
+      <span style="color:black">University of California, Santa Cruz </span>
+    <span style="font-size: 18px">
+    <br>B.S. in Computer Science (Expected Graduation: Spring 2023)
+    <br>Bachelor's thesis: 
+    <br>CGPA: 3.80 / 4.0
+    </p>
+  </span>
+  </div>
+  
+  <!-- <div id = "section3">
+    <p style="text-align: justify; font-size: 40px; padding-left: 70px">Personal</p>
+    When I am not programming, I spend time with music! Some of my favourite pieces are:
 
- <div class="rolling-ball"> </div>
-<script>
-  const ball = document.querySelector(".rolling-ball");
+  </div> -->
 
-  let mouseX = 0;
-  let ballX = 0;
-  let speed = 0.5;
-
-function animate(){
-
-  let distX = mouseX - ballX;
-
-  ballX = ballX + (distX * speed);
-
-  ball.style.left = ballX + "px";
-
-  requestAnimationFrame(animate);
-}
-animate();
-
-document.addEventListener("mousemove", function(event){
-  mouseX = event.pageX;
-})
-</script>
-
- <hr style =" margin-top: 0.0em; width:100%;">
-
- <p style = "font-size: 22px;
- padding-top: 15px;
- font-family: Times;
- text-align: left"> Contact - </p>
- <p style = "font-size: 20px; padding-top: 5px;
- font-family: Times;
- text-align: left">
-   Email:  <a href = "mailto: ssrivas7@ucsc.edu">  ssrivas7@ucsc.edu</a>
-   <br>
-   LinkedIn: <a href = "www.linkedin.com/in/sanyasrivas">  www.linkedin.com/in/sanyasrivas</a>
-    <br>
-   GitHub: <a href = "https://github.com/SanyaSriv">https://github.com/SanyaSriv</a>
-</p>
  </body>
 </html>
